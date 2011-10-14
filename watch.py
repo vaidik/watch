@@ -34,8 +34,7 @@ def get_arg(arg, size=1):
 				if len(arg_val) > 0:
 					return arg_val
 			except IndexError:
-				pass
+				print "%s option needs a value as an argument." % arg
 
-	print "%s option needs a value as an argument." % arg
 	return None
 

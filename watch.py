@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#! /usr/bin/env python
 
 # Watch - program to execute commands after a set interval
 # Author: Vaidik Kapoor  <kapoor.vaidik@gmail.com>

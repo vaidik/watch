@@ -16,17 +16,26 @@
 
 import sys
 
-def get_arg(arg):
+'''
+Gets command-line arguments
+'''
+def get_arg(arg, size=1):
 	argc = len(sys.argv)
 
 	i = 0
 	for i in range(0, argc):
 		if sys.argv[i] == arg:
 			try:
-				arg_val = sys.argv[i+1]
-				return arg_val
+				arg_val = []
+				j = 0
+				for j in range(1, size+1):
+					arg_val.append(sys.argv[i+j])
+
+				if len(arg_val) > 0:
+					return arg_val
 			except IndexError:
 				pass
 
 	print "%s option needs a value as an argument." % arg
 	return None
+

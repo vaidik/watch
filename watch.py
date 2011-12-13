@@ -47,6 +47,18 @@ def get_arg(arg, size=1):
 if __name__ == '__main__':
   argl = 1
 
+  help = get_arg('--help', 0)
+  if help == True:
+    print '''
+    Usage: ./watch [options] <cmd>
+    \n
+    Options:
+      --interval <n>		Interval in seconds. Defaults to 2 seconds. Accepts only integers.
+      --shell			Prompts user to enter the command instead of passing the command as an argument.
+      --help			Print this help information.
+    '''
+    exit()
+
   interval = get_arg('--interval')
   try:
     if interval != None:

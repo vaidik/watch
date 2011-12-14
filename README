@@ -2,6 +2,6 @@ This program is a Python script. It can be used to execute a command
 after a particular interval of time.
 
 It is a Free Software liscenced under the GNU Affero General 
-Public License and written using Django/Python.
+Public License and written using Python.
 
 The project is hosted at https://github.com/vaidikkp/watch.
